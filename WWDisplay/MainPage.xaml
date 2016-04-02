@@ -8,6 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" x:Name="wwTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"
+                       Text="Something"/>
+            <TextBlock Grid.Row="1" x:Name="pinTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Style="{StaticResource SubtitleTextBlockStyle}"
+                       Text="Pin this app to Start."/>
+        </Grid>
     </Grid>
 </Page>
