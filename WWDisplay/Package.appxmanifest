@@ -16,11 +16,10 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WWDisplay.App">
       <uap:VisualElements DisplayName="Work Week" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="WWDisplay" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="Work Week">
+        <uap:DefaultTile ShortName="Work Week">
           <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://wwdisplay.skepsis.rocks/update-tile" />
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
-            <uap:ShowOn Tile="wide310x150Logo" />
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
